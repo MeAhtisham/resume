@@ -1,3 +1,3 @@
-{
-  publicPath : resume
+module.exports = {
+  publicPath: "/resume"
 }
