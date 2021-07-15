@@ -9,11 +9,11 @@
           v-for="(count, index) in counter1"
           :key="index"
         >
-          <Counter
+          <counter
             :title="count.title"
             :subtitle="count.subtitle"
             :img="count.image"
-          ></Counter>
+          ></counter>
         </b-col>
       </b-row>
     </b-container>
@@ -21,13 +21,13 @@
 </template>
 
 <script>
-import Counter from "../components/Counter.vue";
+import counter from "../components/counter.vue";
 import image from "../assets/ice-cream.svg";
 import heart from "../assets/heart.svg";
 import coffee from "../assets/coffee-cup.svg";
 export default {
   components: {
-    Counter,
+    counter,
   },
   data() {
     return {
