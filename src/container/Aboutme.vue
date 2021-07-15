@@ -1,9 +1,9 @@
 <template>
   <section id="aboutus">
     <b-container>
-      <b-row>
+      <b-row align-h="center">
         <b-col lg="10">
-          <b-row class="justify-content-md-center" align-v="center">
+          <b-row align-v="center">
             <b-col lg="6" sm="12">
               <img src="../assets/1.jpg" alt="" class="img-fluid" />
             </b-col>
@@ -23,7 +23,7 @@
               >
               <b-row>
                 <b-col
-                  cols="4"
+                  cols="12"
                   md="4"
                   v-for="(content, ind) in cardcontent"
                   :key="ind"
