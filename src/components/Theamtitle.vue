@@ -1,5 +1,5 @@
 <template>
-  <div :class="`theme-title-default ${className}`">
+  <div :class="`theme-title-default ${className} ${classmb}`">
     <p class="theme-heading"> {{ heading }}</p>
     <h2 class="theme-subheading">
       {{ subheading }}
@@ -13,6 +13,7 @@ export default {
     heading: String,
     subheading: String,
     className: String,
+    classmb: String,
   },
 };
 </script>
@@ -31,5 +32,8 @@ export default {
 .light h2,
 .light p {
   color: #fff !important;
+}
+.mb {
+  margin-bottom: 20px;
 }
 </style>

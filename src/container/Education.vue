@@ -6,7 +6,7 @@
           <b-row>
             <b-col md-12>
               <Theamtitle
-                heading="my experience"
+                heading="my experience ____________"
                 subheading="education & experience"
               >
               </Theamtitle>
