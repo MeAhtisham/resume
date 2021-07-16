@@ -1,5 +1,5 @@
 <template>
-  <div :class="e - card - body">
+  <div class="e-card-body">
     <img :src="img" alt="" class="img-fluid" />
     <div :class="`e-card-fotter ${classclr}`">
       <h2 v-if="title1">{{ title1 }}</h2>
@@ -33,6 +33,7 @@ export default {
   margin-bottom: 5px !important;
   margin-top: 15px !important;
   font-weight: bold !important;
+  text-transform: uppercase;
 }
 .e-card-body img {
   min-height: 196px !important;

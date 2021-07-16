@@ -7,6 +7,9 @@
     <Education></Education>
     <Services></Services>
     <Sponsorssec></Sponsorssec>
+    <Formsec></Formsec>
+    <Map></Map>
+    <Footer></Footer>
   </div>
 </template>
 <script>
@@ -17,6 +20,9 @@ import Gallery from "./container/Gallery.vue";
 import Education from "./container/Education.vue";
 import Services from "./container/Services.vue";
 import Sponsorssec from "./container/Sponsorssec.vue";
+import Formsec from "./container/Formsec.vue";
+import Map from './container/Map.vue';
+import Footer from "./container/Footer.vue";
 // import HelloWorld from "./components/HelloWorld";
 export default {
   components: {
@@ -27,6 +33,9 @@ export default {
     Education,
     Services,
     Sponsorssec,
+    Formsec,
+    Map,
+    Footer,
     // Card,
     // Hell
     // oWorld,

@@ -1,5 +1,7 @@
 <template>
-  <b-button :variant="variant">{{ btnTxt }}</b-button>
+  <div>
+    <b-button :variant="variant" :class="btncls">{{ btnTxt }}</b-button>
+  </div>
 </template>
 
 <script>
@@ -7,6 +9,7 @@ export default {
   props: {
     variant: String,
     btnTxt: String,
+    btncls: String,
   },
 };
 </script>
@@ -21,5 +24,9 @@ export default {
 .btn-secondary {
   background-color: white;
   color: red;
+}
+.newbtn {
+  background-color: black !important;
+  margin-top: 20px !important;
 }
 </style>

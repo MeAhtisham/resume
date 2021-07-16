@@ -98,7 +98,7 @@ export default {
 <style>
 .btn-center {
   text-align: center;
-  /* margin-top: 45px; */
+  margin-top: 45px;
 }
 #education {
   background-color: #ededed;
