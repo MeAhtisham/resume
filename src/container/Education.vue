@@ -6,7 +6,7 @@
           <b-row>
             <b-col md-12>
               <Theamtitle
-                heading="my experience"
+                heading="my experience ____________"
                 subheading="education & experience"
               >
               </Theamtitle>
@@ -98,7 +98,7 @@ export default {
 <style>
 .btn-center {
   text-align: center;
-  /* margin-top: 45px; */
+  margin-top: 45px;
 }
 #education {
   background-color: #ededed;

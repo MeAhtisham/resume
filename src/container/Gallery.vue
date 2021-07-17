@@ -1,17 +1,29 @@
 <template>
   <section id="gallery">
     <b-container>
-      <b-row>
-        <b-col md="5" offset-md="1">
-          <Theamtitle heading="ardad" subheading="rana"></Theamtitle>
-        </b-col>
-        <b-col md="5" offset-md="1">
-          <b-btn @click="handleKeys('all')">all</b-btn>
-          <b-btn @click="handleKeys('cate1')">cate1</b-btn>
-          <b-btn @click="handleKeys('cate2')">cate2</b-btn>
-          <b-btn @click="handleKeys('cate3')">cate3</b-btn>
+      <b-row align-h="center" align-v="center">
+        <b-col md="10">
+          <b-row align-v="center">
+            <b-col cols="12" md="6">
+              <Theamtitle
+                heading="my work ____________"
+                subheading="project i have done"
+                classmb="mb"
+              ></Theamtitle>
+            </b-col>
+            <b-col cols="12" md="6" class="gallerynav">
+              <div>
+                <b-btn @click="handleKeys('all')">all</b-btn>
+                <b-btn @click="handleKeys('cate1')">cate1</b-btn>
+                <b-btn @click="handleKeys('cate2')">cate2</b-btn>
+                <b-btn @click="handleKeys('cate3')">cate3</b-btn></div
+              >
+            </b-col>
+          </b-row>
         </b-col>
       </b-row>
+    </b-container>
+    <b-container fluid class="p-0">
       <b-row>
         <b-col
           class="mb-4"
@@ -29,43 +41,48 @@
 <script>
 import ProductCard from "../components/ProductCard.vue";
 import Theamtitle from "../components/Theamtitle.vue";
-import img from "../assets/1.jpg";
+import coin from "../assets/coin.jpg";
+import tree from "../assets/tree.jpg";
+// import shoes from "../assets/shoes.jpg";
+import shirt from "../assets/shirt.jpg";
+// import coin from "../assets/coin.jpg";
+// import coin from "../assets/coin.jpg";
 const productsList = [
   {
     id: 1,
     category: "cate1",
     title: "title 1",
-    img,
+    img: coin,
   },
   {
     id: 2,
     category: "cate2",
     title: "title 2",
-    img,
+    img: tree,
   },
   {
     id: 3,
     category: "cate3",
     title: "title 3",
-    img,
+    img: shirt,
   },
   {
     id: 4,
     category: "cate2",
     title: "title 4",
-    img,
+    img: coin,
   },
   {
     id: 5,
     category: "cate1",
     title: "title 5",
-    img,
+    img: shirt,
   },
   {
     id: 6,
     category: "cate1",
     title: "title 6",
-    img,
+    img: tree,
   },
 ];
 export default {
@@ -106,6 +123,14 @@ export default {
 
 <style>
 #gallery {
-  padding: 60px 0px;
+  padding: 60px 0px !important;
+  overflow: hidden;
+}
+.btn-secondary {
+  margin-right: 15px !important;
+}
+.gallerynav {
+  display: flex;
+  justify-content: flex-end;
 }
 </style>

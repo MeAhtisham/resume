@@ -93,6 +93,6 @@ export default {
 <style>
 #services {
   background-color: black;
-  padding: 60px 0px;
+  padding: 60px 20px;
 }
 </style>

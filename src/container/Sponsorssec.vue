@@ -4,8 +4,15 @@
       <b-row align-h="center">
         <b-col md="10">
           <b-row>
-            <b-col md="2" v-for="(image, index) in content" :key="index">
-              <Sponsors :img="image.img" alt="s"></Sponsors>
+            <b-col
+              cols="6"
+              md="2"
+              v-for="(image, index) in content"
+              :key="index"
+            >
+              <div class="mtt">
+                <Sponsors :img="image.img" alt="s"></Sponsors>
+              </div>
             </b-col>
             <div class="hr">
               <hr />
@@ -14,7 +21,7 @@
         </b-col>
       </b-row>
       <b-row align-h="center">
-        <b-col md="10">
+        <b-col cols="12" sm="12" md="10">
           <b-row>
             <b-col md="4" v-for="(card, index) in cards" :key="index">
               <Educationcard
@@ -102,7 +109,12 @@ export default {
   padding: 60px;
   padding: 6opx;
 }
-.hr hr {
-  margin-top: 25px;
+.hr {
+  margin-top: 25px !important;
+  margin-bottom: 20px !important;
+}
+
+.mtt {
+  margin-top: 10px;
 }
 </style>

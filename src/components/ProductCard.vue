@@ -7,7 +7,7 @@
       <div>
         <img :src="plus" alt="" class="img-fluid" />
         <p>{{ product.title }}</p>
-        <p>ahti</p>
+        <p>shop it now</p>
       </div>
     </div>
     <div class="overlay"> </div>
