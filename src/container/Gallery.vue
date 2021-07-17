@@ -3,23 +3,27 @@
     <b-container>
       <b-row align-h="center" align-v="center">
         <b-col md="10">
-          <b-row>
+          <b-row align-v="center">
             <b-col cols="12" md="6">
-            <Theamtitle heading="my work ____________" subheading="project i have done" classmb="mb"></Theamtitle>
+              <Theamtitle
+                heading="my work ____________"
+                subheading="project i have done"
+                classmb="mb"
+              ></Theamtitle>
             </b-col>
-            <b-col cols="12" md="6" >
-              <div class="btncls">
-          <b-btn @click="handleKeys('all')">all</b-btn>
-          <b-btn @click="handleKeys('cate1')">cate1</b-btn>
-          <b-btn @click="handleKeys('cate2')">cate2</b-btn>
-          <b-btn @click="handleKeys('cate3')">cate3</b-btn>
-              </div>
-           
-        </b-col>
+            <b-col cols="12" md="6" class="gallerynav">
+              <div>
+                <b-btn @click="handleKeys('all')">all</b-btn>
+                <b-btn @click="handleKeys('cate1')">cate1</b-btn>
+                <b-btn @click="handleKeys('cate2')">cate2</b-btn>
+                <b-btn @click="handleKeys('cate3')">cate3</b-btn></div
+              >
+            </b-col>
           </b-row>
-
         </b-col>
       </b-row>
+    </b-container>
+    <b-container fluid class="p-0">
       <b-row>
         <b-col
           class="mb-4"
@@ -48,37 +52,37 @@ const productsList = [
     id: 1,
     category: "cate1",
     title: "title 1",
-    img:coin
+    img: coin,
   },
   {
     id: 2,
     category: "cate2",
     title: "title 2",
-    img:tree
+    img: tree,
   },
   {
     id: 3,
     category: "cate3",
     title: "title 3",
-    img:shirt
+    img: shirt,
   },
   {
     id: 4,
     category: "cate2",
     title: "title 4",
-    img:coin
+    img: coin,
   },
   {
     id: 5,
     category: "cate1",
     title: "title 5",
-    img:shirt
+    img: shirt,
   },
   {
     id: 6,
     category: "cate1",
     title: "title 6",
-    img:tree
+    img: tree,
   },
 ];
 export default {
@@ -119,9 +123,14 @@ export default {
 
 <style>
 #gallery {
-  padding: 60px 0px;
+  padding: 60px 0px !important;
+  overflow: hidden;
 }
-.btn-secondary{
-  margin-right:  15px !important;
+.btn-secondary {
+  margin-right: 15px !important;
+}
+.gallerynav {
+  display: flex;
+  justify-content: flex-end;
 }
 </style>
